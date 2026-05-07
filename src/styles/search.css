@@ -1,0 +1,140 @@
+/* ========================= */
+/* 🔎 SEARCH CONTAINER */
+/* ========================= */
+
+.search-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column
+
+}
+
+/* ========================= */
+/* INPUT */
+/* ========================= */
+
+.search-input {
+    width: 80%;
+    box-sizing: border-box;
+    align-items: center;
+
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    /* 🔥 evita diferença com dropdown */
+
+    background: #efefef;
+    color: #131313;
+
+    outline: none;
+    font-size: 14px;
+}
+
+/* ========================= */
+/* DROPDOWN */
+/* ========================= */
+
+.search-dropdown {
+
+    margin-top: 8px;
+
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    
+    border-radius: 12px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    z-index: 999;
+}
+
+/* ========================= */
+/* ITEM */
+/* ========================= */
+
+.search-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+    cursor: pointer;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    transition: background 0.15s ease;
+}
+
+.search-item:hover {
+    background: #fafafa;
+}
+
+/* ========================= */
+/* AVATAR */
+/* ========================= */
+
+.search-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+.search-item div {
+    overflow: hidden;
+}
+
+.search-item strong {
+    display: block;
+    font-size: 14px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-item p {
+    margin: 0;
+    font-size: 12px;
+    color: #8e8e8e;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ========================= */
+/* TITLE */
+/* ========================= */
+
+.search-title {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #8e8e8e;
+}
+
+/* ========================= */
+/* SCROLL */
+/* ========================= */
+
+.search-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.search-dropdown::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}

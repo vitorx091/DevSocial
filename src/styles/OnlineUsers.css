@@ -1,0 +1,59 @@
+/* ========================= */
+/* ONLINE BAR */
+/* ========================= */
+
+.online-bar {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+}
+
+.online-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* USER */
+.online-user {
+  text-align: center;
+  cursor: pointer;
+  min-width: 70px;
+}
+
+/* AVATAR */
+.avatar-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.avatar-wrapper img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 🟢 ONLINE DOT */
+.online-dot {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  width: 12px;
+  height: 12px;
+  background: #2ecc71;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+/* NAME */
+.online-user p {
+  font-size: 12px;
+  margin-top: 5px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

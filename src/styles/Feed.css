@@ -1,0 +1,66 @@
+.feed{
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.feed-selection {
+  margin-bottom: 25px;
+  padding: 15px;
+  border-bottom: 1px solid #efefef;
+}
+.feed-header{
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+.feed-header span{
+  font-size: 14px;
+  font-weight: 600;
+  color: #8e8e8e;
+}
+.feed-post{
+  margin-bottom: 25px;
+}
+.feed-item{
+    margin-bottom: 25px;
+}
+.feed-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+.feed > div{
+    margin-bottom: 20px;
+}
+/* ESQUERDA (POSTS) */
+.feed-left {
+  width: 500px;
+}
+
+/* DIREITA (SIDEBAR) */
+.feed-right {
+  width: 320px;
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+/* USER CARD */
+.user-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.user-card p {
+  font-size: 12px;
+  color: #777;
+}
+

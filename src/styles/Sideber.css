@@ -1,0 +1,102 @@
+/* Sidebar.css */
+.sidebar {
+  width: 70px; /* tamanho fechado */
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  border-right: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.expanded {
+  width: 220px; /* tamanho expandido */
+}
+
+.sidebar-top {
+  text-align: center;
+}
+
+.logo {
+  font-size: 20px;
+}
+.sidebar a{
+  display: flex;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.sidebar-nav a:hover {
+  color: #007bff;
+}
+
+.sidebar-bottom{
+  padding: 10px;
+}
+.sidebar svg {
+  stroke-width: 1.5; /* mais fino = mais Instagram */
+}
+.logout-btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.logout-btn:hover{
+  background: #f2f2f2;
+}
+.sidebar-nav a,
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.text {
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.msg-badge-dot {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,35 @@
+query ListPublicProducts @auth(level: PUBLIC, insecureReason: "This operation is safe to expose to the public") {
+  products {
+    id
+    name
+    description
+    price
+  }
+}
+
+query GetMyProfile @auth(level: USER, insecureReason: "This operation is safe to expose to all logged in users.") {
+  users(where: {uid: {eq_expr: "auth.uid"}}) {
+    id
+    username
+    email
+    createdAt
+  }
+}
+
+mutation CreatePost($title: String!, $content: String!) @auth(level: USER) {
+  post: posts_insert(data: {
+    authorUid_expr: "auth.uid",
+    title: $title,
+    content: $content,
+    createdAt_expr: "request.time"
+  })
+}
+
+mutation UpdateUserBio($bio: String!) @auth(expr: "auth.uid != null && auth.token.custom_claims.admin == true") {
+  user: users_update(
+    key: {uid: "auth.uid"},
+    data: {
+      bio: $bio
+    }
+  )
+}

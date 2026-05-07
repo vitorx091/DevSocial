@@ -1,0 +1,142 @@
+.ig-create-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.ig-create-modal {
+  width: 900px;
+  height: 600px;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.ig-header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  color: white;
+  border-bottom: 1px solid #333;
+}
+
+.ig-upload {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.ig-body {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ig-preview {
+  flex: 1;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+
+.ig-preview img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.ig-side {
+  width: 300px;
+  background: #111;
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.ig-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ig-user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.ig-side textarea {
+  margin-top: 10px;
+  height: 150px;
+  background: transparent;
+  border: none;
+  color: white;
+  resize: none;
+}
+
+.ig-change {
+  margin-top: auto;
+  background: none;
+  border: none;
+  color: #0095f6;
+  cursor: pointer;
+}
+
+.ig-arrows button {
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.ig-thumbs {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  background: #000;
+  overflow-x: auto;
+}
+
+.ig-thumbs img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.ig-thumbs img.active {
+  opacity: 1;
+  border: 2px solid #0095f6;
+}
+
+.ig-header button{
+  border: none;
+  background: transparent;
+  color: #0095f6;
+}
+
+.ig-header button:hover {
+  color: #1877f2;
+}

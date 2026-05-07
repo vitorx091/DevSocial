@@ -1,0 +1,118 @@
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-box {
+  background: #d3d3d3;
+  padding: 40px;
+  border: 1px solid #262626;
+  width: 350px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.logo {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: rgb(49, 48, 48);
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #555;
+}
+
+.senha-container {
+  position: relative;
+}
+
+.toggle {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background: #0095f6;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button:hover {
+  background: #1877f2;
+}
+
+.erro {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.register-box {
+  background: #d3d3d3;
+  padding: 20px;
+  border: 1px solid #262626;
+  width: 350px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.register-box span {
+  color: #0095f6;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sugestoes {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #1e1e1e;
+  width: 100%;
+  border: 1px solid #333;
+  border-radius: 6px;
+  z-index: 10;
+}
+
+.sugestao-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sugestao-item:hover {
+  background: #333;
+}

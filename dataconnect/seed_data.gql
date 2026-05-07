@@ -1,0 +1,73 @@
+mutation SeedData @transaction @auth(level: USER, insecureReason: "This is a seed data mutation for initial setup and can be run by any authenticated user.") {
+  user_insertMany(data: [
+    {
+      id: "b2d2f7e0-1c7b-4d4f-8e0a-0b2f7e01c7b4",
+      username: "firebasefan",
+      displayName: "Firebase Fan",
+      email: "fan@example.com",
+      profilePictureUrl: "https://example.com/profile/firebasefan.jpg",
+      bio: "Loves building with Firebase!",
+      createdAt: "2023-01-15T10:00:00Z"
+    },
+    {
+      id: "a1b1c1d1-e1f1-a1b1-c1d1-e1f1a1b1c1d1",
+      username: "geminifriend",
+      displayName: "Gemini's Friend",
+      email: "gemini@example.com",
+      profilePictureUrl: "https://example.com/profile/geminifriend.jpg",
+      bio: "Always learning new things with Gemini in Firebase.",
+      createdAt: "2023-02-20T11:30:00Z"
+    }
+  ])
+  post_insertMany(data: [
+    {
+      id: "c3d3e3f3-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+      userId: "b2d2f7e0-1c7b-4d4f-8e0a-0b2f7e01c7b4",
+      content: "Just launched my new app with Firebase Data Connect!",
+      imageUrl: "https://example.com/posts/app_launch.jpg",
+      createdAt: "2023-03-01T14:00:00Z"
+    },
+    {
+      id: "f4e4d4c4-2b3c-4d5e-6f7a-8b9c0d1e2f3a",
+      userId: "a1b1c1d1-e1f1-a1b1-c1d1-e1f1a1b1c1d1",
+      content: "Exploring the power of GraphQL mutations in FDC. So cool!",
+      imageUrl: "https://example.com/posts/graphql_explore.png",
+      createdAt: "2023-03-05T09:45:00Z"
+    }
+  ])
+  comment_insertMany(data: [
+    {
+      id: "e5f5g5h5-3c4d-5e6f-7a8b-9c0d1e2f3a4b",
+      userId: "a1b1c1d1-e1f1-a1b1-c1d1-e1f1a1b1c1d1",
+      postId: "c3d3e3f3-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+      content: "That's awesome! What kind of app is it?",
+      createdAt: "2023-03-01T15:10:00Z"
+    },
+    {
+      id: "g6h6i6j6-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+      userId: "b2d2f7e0-1c7b-4d4f-8e0a-0b2f7e01c7b4",
+      postId: "f4e4d4c4-2b3c-4d5e-6f7a-8b9c0d1e2f3a",
+      content: "Right? It's incredibly flexible.",
+      createdAt: "2023-03-05T10:00:00Z"
+    }
+  ])
+  like_insertMany(data: [
+    {
+      userId: "a1b1c1d1-e1f1-a1b1-c1d1-e1f1a1b1c1d1",
+      postId: "c3d3e3f3-1a2b-3c4d-5e6f-7a8b9c0d1e2f",
+      createdAt: "2023-03-01T15:05:00Z"
+    },
+    {
+      userId: "b2d2f7e0-1c7b-4d4f-8e0a-0b2f7e01c7b4",
+      postId: "f4e4d4c4-2b3c-4d5e-6f7a-8b9c0d1e2f3a",
+      createdAt: "2023-03-05T09:50:00Z"
+    }
+  ])
+  follow_insertMany(data: [
+    {
+      followerId: "b2d2f7e0-1c7b-4d4f-8e0a-0b2f7e01c7b4",
+      followeeId: "a1b1c1d1-e1f1-a1b1-c1d1-e1f1a1b1c1d1",
+      createdAt: "2023-02-25T10:00:00Z"
+    }
+  ])
+}

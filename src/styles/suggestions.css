@@ -1,0 +1,101 @@
+/* ========================= */
+/* 🔝 TOPO (CARROSSEL) */
+/* ========================= */
+
+.suggestions {
+  margin: 20px 0;
+}
+
+.suggestions h3 {
+  font-size: 14px;
+  color: #8e8e8e;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.suggestions-row {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.suggestion-card {
+  min-width: 120px;
+  text-align: center;
+}
+
+.suggestion-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.suggestion-card p {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.suggestion-card button {
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid #0095f6;
+  background: #0095f6;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* ========================= */
+/* 📄 INLINE (NO FEED) */
+/* ========================= */
+
+.suggestions-inline {
+  margin: 10px 0;
+  padding: 10px 0;
+
+  background: transparent; /* 🔥 remove cara de post */
+  border: none;
+}
+
+/* lista vertical */
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px 0;
+}
+
+.suggestion-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.suggestion-left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.suggestion-item strong {
+  font-size: 14px;
+}
+
+.suggestion-item span {
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+/* botão estilo Instagram */
+.suggestion-item button {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-weight: 600;
+  cursor: pointer;
+}

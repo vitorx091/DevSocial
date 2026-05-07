@@ -1,0 +1,122 @@
+.register-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.form-register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.register-box {
+  background: #d3d3d3;
+  padding: 40px;
+  border: 1px solid #262626;
+  width: 350px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.logo {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.input:focus {
+  outline: none;
+  border: 1px solid #555;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background: #0095f6;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button:hover {
+  background: #1877f2;
+}
+
+.erro {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.register-footer {
+  background: #d3d3d3;
+  padding: 20px;
+  border: 1px solid #262626;
+  width: 350px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.register-footer span {
+  color: #0095f6;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* FOTO */
+.foto-upload {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.foto-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #1e1e1e;
+  border: 2px dashed #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #777;
+  cursor: pointer;
+}
+
+.foto-preview {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+textarea.input {
+  resize: none;
+  height: 70px;
+}

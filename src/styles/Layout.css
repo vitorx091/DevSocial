@@ -1,0 +1,56 @@
+.layout {
+  display: flex;
+}
+.main-content{
+  margin: auto
+}
+
+/* Sidebar esquerda */
+.sidebar {
+  width: 80px;
+  transition: 0.3s;
+}
+
+/* Conteúdo central */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Notificações direita */
+.notifications {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+
+  width: 70px; /* fechado */
+  transition: width 0.3s ease;
+
+  border-left: 1px solid #ddd;
+  background: #fff;
+  overflow: hidden;
+
+}
+
+/* quando abre */
+.notifications.open {
+  width: 300px;
+}
+
+/* conteúdo interno */
+.notifications h3 {
+  padding: 15px;
+}
+
+/* só aparece quando aberto */
+.notification-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.notifications.open .notification-item {
+  opacity: 1;
+}
