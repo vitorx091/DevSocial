@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.re_Y8jMfdyx_M25D7W7TSaN81feyocpsbEDZ);
 
 // 🔥 CONFIG
 const ADMIN_EMAIL = "vitorfidelis091@gmail.com";
